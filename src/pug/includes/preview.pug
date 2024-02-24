@@ -5,5 +5,9 @@ section.preview
 		+buttonAccent("preview__modal-open", "Оставить заявку", "modal-recall")
 	div.preview__image(aria-hidden="true")
 		picture
-			source(srcset="img/content/preview-bg.webp" type="image/webp")
-			img(src="img/content/preview-bg.jpg" alt="" loading="lazy")
+			source(media="(min-width: 1200px)" srcset="img/content/preview-bg.webp" type="image/webp")
+			source(media="(min-width: 1200px)" srcset="img/content/preview-bg.jpg")
+			source(media="(min-width: 600px)" srcset="img/content/preview-bg-t.webp" type="image/webp")
+			source(media="(min-width: 600px)" srcset="img/content/preview-bg-t.jpg")
+			source(srcset="img/content/preview-bg-m.webp" type="image/webp")
+			img(src="img/content/preview-bg-m.jpg" alt="" loading="lazy")

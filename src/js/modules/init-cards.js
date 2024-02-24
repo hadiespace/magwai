@@ -70,6 +70,10 @@ const AUTHORS = [
 ];
 
 const createCard = (element, cardsList) => {
+	const item = document.createElement('li');
+	item.classList.add('cards__item');
+	cardsList.append(item);
+
 	const card = cardTemplate.content.cloneNode(true);
 	const photo = PHOTOS[getRandomInteger(0, PHOTOS.length - 1)];
 	const label = LABELS[getRandomInteger(0, LABELS.length - 1)];
@@ -83,7 +87,7 @@ const createCard = (element, cardsList) => {
 	card.querySelector('.card__image img').src = photo.jpg;
 	card.querySelector('.card__image source').srcset = photo.webp;
 
-	cardsList.append(card);
+	item.append(card);
 };
 
 const createPosts = (array, cardsList, buttonLoad) => {

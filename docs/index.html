@@ -12,17 +12,18 @@
     <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     <title>Магваи</title>
+    <meta name="description" content="Сайт Магваи">
     <link rel="preload" href="fonts/montserrat-400.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat-600.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/montserrat-700.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/mulish-600.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/mulish-700.woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240224040109">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240224041957">
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__container container">
-        <button class="header__toggle" type="button" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+        <button class="header__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link" href="">Услуги</a></li>
@@ -33,7 +34,8 @@
             <li class="navigation__item"><a class="navigation__link" href="">FAQ</a></li>
             <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
           </ul>
-        </nav><a class="header__logo"><img src="img/content/logo.svg" alt="Логотип Magvai" loading="lazy"></a>
+        </nav>
+        <div class="header__logo"><img src="img/content/logo.svg" alt="Логотип Magvai" loading="lazy"></div>
         <div class="header__contacts"><a class="header__phone" href="" data-phone><span class="visually-hidden">+7 (999) 99 99</span>
             <svg width="32" height="32" aria-hidden="true">
               <use xlink:href="img/sprite.svg#phone"></use>
@@ -54,7 +56,11 @@
         </div>
         <div class="preview__image" aria-hidden="true">
           <picture>
-            <source srcset="img/content/preview-bg.webp" type="image/webp"><img src="img/content/preview-bg.jpg" alt="" loading="lazy">
+            <source media="(min-width: 1200px)" srcset="img/content/preview-bg.webp" type="image/webp">
+            <source media="(min-width: 1200px)" srcset="img/content/preview-bg.jpg">
+            <source media="(min-width: 600px)" srcset="img/content/preview-bg-t.webp" type="image/webp">
+            <source media="(min-width: 600px)" srcset="img/content/preview-bg-t.jpg">
+            <source srcset="img/content/preview-bg-m.webp" type="image/webp"><img src="img/content/preview-bg-m.jpg" alt="" loading="lazy">
           </picture>
         </div>
       </section>
@@ -126,7 +132,7 @@
           </picture></a>
       </article>
     </template>
-    <script src="js/bundle.min.js?_v=20240224040109"></script>
-    <script src="js/switcher.js?_v=20240224040109"></script>
+    <script src="js/bundle.min.js?_v=20240224041957"></script>
+    <script src="js/switcher.js?_v=20240224041957"></script>
   </body>
 </html>

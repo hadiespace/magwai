@@ -1,6 +1,6 @@
 header.header
 	div.header__container.container
-		button.header__toggle(type="button" aria-expanded="false" aria-controls="menu")
+		button.header__toggle(type="button" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню")
 			span
 			span
 			span
@@ -9,7 +9,7 @@ header.header
 				each element in DataHeader.Navigation
 					li.navigation__item
 						a.navigation__link(href="")!= element
-		a.header__logo
+		div.header__logo
 			img(src="img/content/logo.svg" alt="Логотип Magvai" loading="lazy")
 		div.header__contacts
 			a.header__phone(href="" data-phone)

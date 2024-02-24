@@ -37,7 +37,10 @@
 		grid-template-columns: repeat(5, 1fr);
 	}
 }
-.cards__item {}
+
+.cards__item {
+	display: grid;
+}
 
 .cards__load-more {
 	margin-top: 38px;
