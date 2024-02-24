@@ -5,7 +5,7 @@
 	overflow: hidden;
 	height: calc(100dvh - 72px);
 	min-height: 320px;
-	max-height: 600px;
+	max-height: 1000px;
 
 	&::before {
 		content: "";
@@ -21,7 +21,7 @@
 	@media (min-width: 600px) {
 		height: calc(100dvh - 110px);
 		min-height: 480px;
-		max-height: 920px;
+		max-height: 1200px;
 
 		&::before {
 			height: 520px;
