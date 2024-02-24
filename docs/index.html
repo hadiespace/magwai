@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="icon" href="favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title></title>
+    <link rel="preload" href="fonts/montserrat-400.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/mulish-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/mulish-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240224035803">
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__container container">
+        <button class="header__toggle" type="button" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="">Услуги</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="">Абонементы</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="">Почему мы</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="">Оборудование</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="">Акции</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="">FAQ</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
+          </ul>
+        </nav><a class="header__logo"><img src="img/content/logo.svg" alt="Логотип Magvai" loading="lazy"></a>
+        <div class="header__contacts"><a class="header__phone" href="" data-phone><span class="visually-hidden">+7 (999) 99 99</span>
+            <svg width="32" height="32" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg></a>
+              <button class="header__modal-open button-accent" type="button" data-modal="modal-recall"><span class="button-accent__text">Оставить заявку</span><span class="button-accent__line"></span></button>
+        </div>
+      </div>
+      <div class="menu" id="menu">
+        <div class="menu__container container"></div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="preview">
+        <div class="preview__container container">
+          <h1 class="preview__heading heading">Полет Илона Маска <br> и Dogie Coin</h1>
+          <p class="preview__text">В прошлый четверг все офигели от полета DOGIE COIN на марс.</p>
+              <button class="preview__modal-open button-accent" type="button" data-modal="modal-recall"><span class="button-accent__text">Оставить заявку</span><span class="button-accent__line"></span></button>
+        </div>
+        <div class="preview__image" aria-hidden="true">
+          <picture>
+            <source srcset="img/content/preview-bg.webp" type="image/webp"><img src="img/content/preview-bg.jpg" alt="" loading="lazy">
+          </picture>
+        </div>
+      </section>
+      <section class="cards">
+        <div class="cards__container container">
+          <h2 class="cards__heading heading">Карточки</h2>
+        </div>
+      </section>
+    </main>
+        <div class="modal" id="modal-recall">
+          <div class="modal__content">
+            <div class="modal__top-wrap">
+              <button class="modal__close modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__wrapper">
+              <p class="modal__title">Заказать звонок</p>
+              <form class="modal__form" action="#" novalidate data-form>
+                    <div class="modal__field-name field field--required">
+                      <input class="field__input validate-name required" id="recall-name" type="text" name="name" placeholder=" ">
+                      <label class="field__label" for="recall-name">Имя</label><span class="field__error"></span>
+                    </div>
+                    <div class="modal__field-phone field field--required">
+                      <input class="field__input validate-phone required" id="recall-phone" type="tel" name="phone" placeholder=" ">
+                      <label class="field__label" for="recall-phone">Телефон</label><span class="field__error"></span>
+                    </div>
+                    <div class="modal__field-email field field--required">
+                      <input class="field__input validate-email required" id="recall-email" type="email" name="email" placeholder=" ">
+                      <label class="field__label" for="recall-email">E-mail</label><span class="field__error"></span>
+                    </div>
+                    <div class="modal__field-consent field field--consent">
+                      <input class="visually-hidden required" id="recall-consent" type="checkbox" name="consent" checked>
+                      <label class="field__consent" for="recall-consent">Отправляя форму, Вы даёте согласие на <a href="">обработку персональных данных</a></label>
+                    </div>
+                <button class="modal__submit button-accent" type="submit"><span class="button-accent__text">Отправить заявку</span><span class="button-accent__line"></span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="modal-success">
+          <div class="modal__content">
+            <div class="modal__top-wrap">
+              <button class="modal__close modal-close" type="button" aria-label="Закрыть модальное окно">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#modal-close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="modal__wrapper">
+              <p class="modal__success-title">Ваша заявка <br> успешно отправлена</p>
+              <p class="modal__success-text">Мы свяжемся с вами в ближайшее время.</p>
+              <button class="modal__success-submit modal-close button-accent" type="button"><span class="button-accent__text">Отлично</span><span class="button-accent__line"></span></button>
+            </div>
+          </div>
+        </div>
+    <template id="card">
+      <article class="card">
+        <div class="card__wrapper">
+          <h3 class="card__heading"><a href=""></a></h3>
+          <p class="card__label"></p>
+          <p class="card__text"></p>
+          <p class="card__post"></p><a class="card__link button-main" href="">Continue reading</a>
+        </div><a class="card__image" href="">
+          <picture>
+            <source srcset="" type="image/webp"><img src="" alt="Image" loading="lazy">
+          </picture></a>
+      </article>
+    </template>
+    <script src="js/bundle.min.js?_v=20240224035803"></script>
+    <script src="js/switcher.js?_v=20240224035803"></script>
+  </body>
+</html>

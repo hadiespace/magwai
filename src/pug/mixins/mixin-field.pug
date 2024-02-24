@@ -1,0 +1,46 @@
+mixin fieldName(parent, id)
+	div(class=`${parent}__field-name field field--required`)
+		input(
+			class="field__input validate-name required"
+			id=`${id}-name`
+			type="text"
+			name="name"
+			placeholder=" "
+		)
+		label.field__label(for=`${id}-name`) Имя
+		span.field__error
+
+mixin fieldPhone(parent, id)
+	div(class=`${parent}__field-phone field field--required`)
+		input(
+			class="field__input validate-phone required"
+			id=`${id}-phone`
+			type="tel"
+			name="phone"
+			placeholder=" "
+		)
+		label.field__label(for=`${id}-phone`) Телефон
+		span.field__error
+
+mixin fieldEmail(parent, id)
+	div(class=`${parent}__field-email field field--required`)
+		input(
+			class="field__input validate-email required"
+			id=`${id}-email`
+			type="email"
+			name="email"
+			placeholder=" "
+		)
+		label.field__label(for=`${id}-email`) E-mail
+		span.field__error
+
+mixin fieldConsent(parent, id)
+	div(class=`${parent}__field-consent field field--consent`)
+		input(
+			class="visually-hidden required"
+			id=`${id}-consent`
+			type="checkbox"
+			name="consent"
+			checked
+		)
+		label.field__consent(for=`${id}-consent`) Отправляя форму, Вы даёте согласие на #[a(href="") обработку персональных данных]

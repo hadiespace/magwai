@@ -1,0 +1,12 @@
+mixin modal(parent,)
+	div(class="modal" id=`modal-${parent}`)
+		div(class="modal__content")
+			div(class="modal__top-wrap")
+				button(
+					class="modal__close modal-close"
+					type="button"
+					aria-label="Закрыть модальное окно"
+				)
+					svg(width="20" height="20" aria-hidden="true")
+						use(xlink:href="img/sprite.svg#modal-close")
+			block

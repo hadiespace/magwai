@@ -1,0 +1,85 @@
+.button-accent {
+	position: relative;
+	left: 11px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: calc(100% - 34px);
+	min-height: 60px;
+	background-color: #c2ab81;
+	transform: skew(-20deg);
+	transition: opacity .3s;
+
+	svg {
+		width: 32px;
+		height: 32px;
+		fill: #fff;
+		transform: skew(20deg);
+	}
+
+	@media (min-width: 600px) {
+		padding: 12px 32px;
+	}
+}
+
+.button-accent__text {
+	z-index: 1;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 150%;
+	text-transform: uppercase;
+	color: #fff;
+	transform: skew(20deg);
+	transition: color .3s;
+	pointer-events: none;
+}
+
+.button-accent__line {
+	position: absolute;
+	right: -12px;
+	width: 6px;
+	height: 100%;
+	min-height: 60px;
+	background-color: #fff;
+	transition: width .3s;
+	pointer-events: none;
+}
+
+@media (hover: hover) {
+	.button-accent {
+		&:hover,
+		&:focus {
+			.button-accent__text {
+				color: #171717;
+			}
+
+			.button-accent__line {
+				width: calc(100% + 12px);
+			}
+		}
+	}
+}
+
+@media (hover: none) {
+	.button-accent {
+		&:active {
+			.button-accent__text {
+				color: #171717;
+			}
+
+			.button-accent__line {
+				width: calc(100% + 12px);
+			}
+		}
+	}
+}
+
+.preview__modal-open {
+	@media (max-width: 599px) {
+		min-height: 46px;
+
+		.button-accent__line {
+			min-height: 46px;
+		}
+	}
+}

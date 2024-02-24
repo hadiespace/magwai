@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+textarea {
+	resize: none;
+}
+
+input {
+	font-family: unset;
+	font-size: unset;
+	line-height: unset;
+
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		appearance: none;
+		margin: 0;
+	}
+
+	&[type="file"] {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	&[type="number"] {
+		appearance: textfield;
+	}
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	box-shadow: 0 0 0 1000px #131313 inset;
+	-webkit-text-fill-color: #fff;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+svg {
+	pointer-events: none;
+}
+
+button {
+	border: none;
+	padding: 0;
+	font-size: unset;
+	line-height: unset;
+	color: unset;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+
+	&[href^="tel:"],
+	&[href^="mailto:"] {
+		font-variant-numeric: lining-nums;
+		white-space: nowrap;
+	}
+}
+
+p {
+	margin: 0;
+}
+
+b {
+	font-weight: 600;
+}
+
+ul,
+ol,
+dl {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+[data-whatintent="mouse"] *:focus {
+	outline: none;
+}

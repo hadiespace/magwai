@@ -1,0 +1,9 @@
+mixin buttonAccent(parentClass, text, modal)
+	if modal
+		button(class=`${parentClass} button-accent` type="button" data-modal=`${modal}`)
+			span.button-accent__text!= text
+			span.button-accent__line
+	else
+		button(class=`${parentClass} button-accent` type="button")
+			span.button-accent__text!= text
+			span.button-accent__line

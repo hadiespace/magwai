@@ -1,0 +1,115 @@
+.card {
+	display: grid;
+	grid-template-rows: max-content 1fr;
+	background-color: #fff;
+}
+
+.card__wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 24px 30px;
+}
+
+.card__heading {
+	margin: 20px 0 0;
+	font-size: 16px;
+	line-height: 162%;
+	color: #171717;
+
+	&::first-letter {
+		text-transform: uppercase;
+	}
+
+	a {
+		transition: color .3s;
+	}
+
+	@media (hover: hover) {
+		a {
+			&:hover,
+			&:focus {
+				color: #c2ab81;
+			}
+		}
+	}
+
+	@media (hover: none) {
+		a {
+			&:active {
+				color: #c2ab81;
+			}
+		}
+	}
+}
+
+.card__label {
+	order: -1;
+	margin: 0;
+	font-family: Mulish, sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 186%;
+	letter-spacing: .11em;
+	text-transform: uppercase;
+	color: #171717;
+}
+
+.card__text {
+	display: -webkit-box;
+	overflow: hidden;
+	margin: 20px 0;
+	font-size: 14px;
+	line-height: 171%;
+	color: #666;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 6; /* number of lines to show */
+	line-clamp: 6;
+
+	@media (min-width: 600px) {
+		margin: 20px 0 44px;
+	}
+}
+
+.card__post {
+	margin-top: auto;
+	font-size: 12px;
+	line-height: 200%;
+	color: #666;
+
+	em {
+		font-style: normal;
+	}
+
+	em,
+	b {
+		font-weight: 700;
+	}
+}
+
+.card__link {
+	margin-top: 25px;
+}
+
+.card__image {
+	position: relative;
+	order: -1;
+	overflow: hidden;
+	width: 100%;
+	height: 185px;
+
+	img {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform .3s;
+	}
+
+	&:hover,
+	&:focus {
+		img {
+			transform: scale(102%);
+		}
+	}
+}

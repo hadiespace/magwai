@@ -1,0 +1,9 @@
+section.preview
+	div.preview__container.container
+		h1.preview__heading.heading Полет Илона Маска #[br] и Dogie Coin
+		p.preview__text В прошлый четверг все офигели от полета DOGIE COIN на марс.
+		+buttonAccent("preview__modal-open", "Оставить заявку", "modal-recall")
+	div.preview__image(aria-hidden="true")
+		picture
+			source(srcset="img/content/preview-bg.webp" type="image/webp")
+			img(src="img/content/preview-bg.jpg" alt="" loading="lazy")

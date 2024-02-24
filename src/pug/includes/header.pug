@@ -1,0 +1,21 @@
+header.header
+	div.header__container.container
+		button.header__toggle(type="button" aria-expanded="false" aria-controls="menu")
+			span
+			span
+			span
+		nav.header__navigation.navigation
+			ul.navigation__list
+				each element in DataHeader.Navigation
+					li.navigation__item
+						a.navigation__link(href="")!= element
+		a.header__logo
+			img(src="img/content/logo.svg" alt="Логотип Magvai" loading="lazy")
+		div.header__contacts
+			a.header__phone(href="" data-phone)
+				span.visually-hidden +7 (999) 99 99
+				svg(width="32" height="32" aria-hidden="true")
+					use(xlink:href="img/sprite.svg#phone")
+			+buttonAccent("header__modal-open", "Оставить заявку", "modal-recall")
+	div.menu(id="menu")
+		div.menu__container.container

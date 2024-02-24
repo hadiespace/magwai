@@ -1,0 +1,19 @@
++modal("recall")
+	div.modal__wrapper
+		p.modal__title Заказать звонок
+		form.modal__form(action="#" novalidate data-form)
+			+fieldName("modal", "recall")
+			+fieldPhone("modal", "recall")
+			+fieldEmail("modal", "recall")
+			+fieldConsent("modal", "recall")
+			button.modal__submit.button-accent(type="submit")
+				span.button-accent__text Отправить заявку
+				span.button-accent__line
+
++modal("success")
+	div.modal__wrapper
+		p.modal__success-title Ваша заявка #[br] успешно отправлена
+		p.modal__success-text Мы свяжемся с вами в ближайшее время.
+		button.modal__success-submit.modal-close.button-accent(type="button")
+			span.button-accent__text Отлично
+			span.button-accent__line

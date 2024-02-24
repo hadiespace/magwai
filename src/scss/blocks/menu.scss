@@ -1,0 +1,29 @@
+.menu {
+	position: absolute;
+	top: 72px;
+	z-index: 10;
+	display: grid;
+	overflow: auto;
+	padding-bottom: 20px;
+	width: 100%;
+	height: calc(100dvh - 72px);
+	background-color: #131313;
+	opacity: 0;
+	transition: opacity .3s;
+	pointer-events: none;
+
+	&--opened {
+		opacity: 1;
+		pointer-events: visible;
+	}
+
+	@media (min-width: 600px) {
+		top: 110px;
+	}
+}
+
+.menu__container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}

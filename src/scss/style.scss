@@ -1,0 +1,26 @@
+@import
+	// основное
+	"normalize",
+	"mixins",
+	"fonts",
+	"variables",
+	"global",
+	"scaffolding",
+	// вспомогательное
+	"blocks/page",
+	"blocks/visually-hidden",
+	"blocks/container",
+	// компоненты
+	"blocks/button-main",
+	"blocks/button-accent",
+	"blocks/heading",
+	"blocks/card",
+	"blocks/field",
+	// блоки
+	"blocks/header",
+	"blocks/menu",
+	"blocks/navigation",
+	"blocks/main",
+	"blocks/preview",
+	"blocks/cards",
+	"blocks/modal";
